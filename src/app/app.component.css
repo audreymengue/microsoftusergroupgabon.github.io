@@ -1,0 +1,56 @@
+#home {
+    position: relative;
+    background-image: url('/assets/pexels-gabby-k-9488847.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 2; /* Make sure overlay is on top */
+  }
+  
+  #home .overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  #home .overlay p {
+    font-size: 1.25rem;
+  }
+  
+  /* If you want to blur the background without affecting the overlay */
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/pexels-gabby-k-9488847.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur to the background */
+    z-index: 1; /* Keep background below the overlay */
+  }
+  
+.logoaninf{
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
