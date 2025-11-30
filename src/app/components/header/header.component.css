@@ -1,9 +1,6 @@
-.navbar {
-    padding: 10px 20px;
-  }
-  
+
   .logo {
-    height: 40px; /* Adjust the size of your logo */
+    height: 40px; 
   }
   
   .navbar-nav .nav-link {
@@ -15,12 +12,12 @@
     color: #fff;
   }
   
-  /* Ensure content is visible below the fixed navbar */
+
   body {
-    padding-top: 70px; /* Adjust based on navbar height */
+    padding-top: 70px; 
   }
   
-  /* Smooth scrolling effect */
+ 
   html {
     scroll-behavior: smooth;
   }
