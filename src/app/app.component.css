@@ -36,3 +36,21 @@ section .container {
   width: 100%;
   max-width: 1200px;
 }
+
+section .picture{
+   width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+section #about{
+  display: flex;
+  align-items: stretch;
+}
+
+#about > div{
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+}
