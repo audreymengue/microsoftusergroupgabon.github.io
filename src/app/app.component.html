@@ -1,90 +1,82 @@
 <app-header></app-header>
 
 <div class="container">
-    <section id="about" class="bg-danger d-flex flex-column flex-md-row">
-        <div class="bg-primary">
-            <div class="a-propos">
-                <h2>A propos</h2>
-                <p>Nous sommes bien plus qu'une communauté.</p>
-                <p>Nous sommes une nouvelle façon de penser, d'éduquer et d'innover.</p>
-            </div>
-            <div class="a-propos-img">
-                <img class="picture" src="assets/picture.jpg" alt="community picture">
-            </div>
+    <section id="about">
+        <h2>A propos</h2>
+        <div class="a-propos">
+            <p>Nous sommes bien plus qu'une communauté.</p>
+            <p>Nous sommes une nouvelle façon de penser, d'éduquer et d'innover.</p>
         </div>
-        <div class="bg-success">
-            <div class="containter">
-                <div class="twin-box">
-                    <img class="picture" src="assets/picture.jpg" alt="community picture">
-                    <img class="picture" src="assets/picture.jpg" alt="community picture">
-                </div>
-                <div class="text-box">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, laborum saepe.
-                        Voluptates dicta, tempore perferendis ipsum magni alias unde ullam aspernatur.
-                        Error magni adipisci impedit esse dolorum aperiam veritatis asperiores!</p>
-                </div>
-                <div class="stats-box bg-white d-flex justify-content-between gap-2 mt-5">
-                    <div class="stats-sm">
-                        <h3>10K</h3>
-                        <p>User subscribeb </p>
-                    </div>
-                    <div class="stats-sm">
-                        <h3>10K</h3>
-                        <p>User subscribeb </p>
-                    </div>
-                    <div class="stats-sm">
-                        <h3>10K</h3>
-                        <p>User subscribeb </p>
-                    </div>
-                    <div class="stats-sm">
-                        <h3>10K</h3>
-                        <p>User subscribeb </p>
-                    </div>
-                </div>
-                <!-- <div class="row text-center justify-content-center">
-                    <div class="row-md-3 mt-1">
-                        <div class="card border-0 shadow p-3">
-                            <i class="bi bi-bullseye fs-1 text-primary"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Notre Mission</h5>
-                                <p class="card-text">Nous visons à encourager l'innovation en autonomisant les
-                                    communautés grâce à la tech.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-md-3 mt-1">
-                        <div class="card border-0 shadow p-3">
-                            <i class="bi bi-eye fs-1 text-success"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Notre Vision</h5>
-                                <p class="card-text">Construire un avenir où la technologie comble les écarts et crée
-                                    des opportunités.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-md-3 mt-1">
-                        <div class="card border-0 shadow p-3">
-                            <i class="bi bi-lightbulb fs-1 text-warning"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Le Problème à Résoudre</h5>
-                                <p class="card-text">Nous répondons au manque d'opportunités et d'accès à la tech dans
-                                    les communautés.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-md-3 mt-1">
-                        <div class="card border-0 shadow p-3">
-                            <i class="bi bi-rocket fs-1 text-danger"></i>
-                            <div class="card-body">
-                                <h5 class="card-title">Notre Approche</h5>
-                                <p class="card-text">En organisant des ateliers, des rencontres et des programmes , nous
-                                    créons un impact.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+        <div class="container">
+  <div class="row g-3 align-items-stretch">
+    
+    <!-- LEFT BOX (IMAGE) -->
+    <div class="col-12 col-md-6">
+      <div class="h-100 bg-primary rounded overflow-hidden d-flex justify-content-center align-items-center">
+        <img src="assets/picture.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="community picture">
+      </div>
+    </div>
+
+    <!-- RIGHT BOX (CARDS + STATS) -->
+    <div class="col-12 col-md-6">
+      <div class="h-100 d-flex flex-column">
+
+        <!-- Cards Grid -->
+        <div class="row g-3">
+          <div class="col-12 col-sm-6">
+            <div class="card h-100 border-0 shadow p-3 text-center">
+              <i class="bi bi-bullseye fs-1 text-primary"></i>
+              <h5 class="mt-2">Notre Mission</h5>
+              <p>Nous visons à encourager l'innovation en autonomisant les communautés grâce à la tech.</p>
             </div>
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <div class="card h-100 border-0 shadow p-3 text-center">
+              <i class="bi bi-eye fs-1 text-success"></i>
+              <h5 class="mt-2">Notre Vision</h5>
+              <p>Construire un avenir où la technologie comble les écarts et crée des opportunités.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <div class="card h-100 border-0 shadow p-3 text-center">
+              <i class="bi bi-lightbulb fs-1 text-warning"></i>
+              <h5 class="mt-2">Le Problème</h5>
+              <p>Nous répondons au manque d'opportunités et d'accès à la tech dans les communautés.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6">
+            <div class="card h-100 border-0 shadow p-3 text-center">
+              <i class="bi bi-rocket fs-1 text-danger"></i>
+              <h5 class="mt-2">Notre Approche</h5>
+              <p>Ateliers, rencontres et programmes pour créer un impact réel.</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Stats Row -->
+        <div class="stats-box bg-white shadow-sm rounded d-flex justify-content-between text-center p-3 mt-4">
+          <div class="stats-sm">
+            <h3>10K</h3><p>Users</p>
+          </div>
+          <div class="stats-sm">
+            <h3>10K</h3><p>Users</p>
+          </div>
+          <div class="stats-sm">
+            <h3>10K</h3><p>Users</p>
+          </div>
+          <div class="stats-sm">
+            <h3>10K</h3><p>Users</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
 
     <section id="services" class="mt-5">
