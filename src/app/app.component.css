@@ -20,6 +20,10 @@ section {
 #home .overlay {
   text-align: center;
 }
+section[id] {
+  scroll-margin-top: 8rem; /* navbar height */
+}
+
 
 /* Remove extra margins from headings for consistent vertical centering */
 section h2, section p {
@@ -44,7 +48,7 @@ section .picture{
   object-fit: contain;
 }
 
-section #about{
+/* section #about{
   display: flex;
   align-items: stretch;
 }
@@ -53,4 +57,24 @@ section #about{
   flex: 1;
   padding: 20px;
   margin: 20px;
+} */
+ /* Fix the huge spacing on ABOUT section */
+#about {
+  min-height: auto !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+/* Reduce space between text and cards */
+#about .a-propos {
+  margin-bottom: 3rem;
+}
+
+#about .container {
+  margin-top: 1rem;
+}
+
+.stats-box{
+  background-color: #00A4EF;
 }
