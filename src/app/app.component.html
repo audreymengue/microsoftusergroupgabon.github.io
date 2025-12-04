@@ -9,19 +9,20 @@
         </div>
         <div class="container">
             <div class="row g-3 align-items-stretch">
-    
+
                 <!-- LEFT BOX (IMAGE) -->
                 <div class="col-12 col-md-6">
-                    <div class="h-100 bg-primary rounded overflow-hidden d-flex justify-content-center align-items-center">
+                    <div
+                        class="h-100 bg-primary rounded overflow-hidden d-flex justify-content-center align-items-center">
                         <img src="assets/picture.jpg" class="img-fluid w-100 h-100 object-fit-cover"
                             alt="community picture">
                     </div>
                 </div>
-    
+
                 <!-- RIGHT BOX (CARDS + STATS) -->
                 <div class="col-12 col-md-6">
                     <div class="h-100 d-flex flex-column">
-    
+
                         <!-- Cards Grid -->
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
@@ -32,25 +33,27 @@
                                         tech.</p>
                                 </div>
                             </div>
-    
+
                             <div class="col-12 col-sm-6">
                                 <div class="card h-100 border-0 shadow p-3 text-center">
                                     <i class="bi bi-eye fs-1 text-success"></i>
                                     <h5 class="mt-2">Notre Vision</h5>
-                                    <p>Construire un avenir où la technologie comble les écarts et crée des opportunités.
+                                    <p>Construire un avenir où la technologie comble les écarts et crée des
+                                        opportunités.
                                     </p>
                                 </div>
                             </div>
-    
+
                             <div class="col-12 col-sm-6">
                                 <div class="card h-100 border-0 shadow p-3 text-center">
                                     <i class="bi bi-lightbulb fs-1 text-warning"></i>
                                     <h5 class="mt-2">Le Problème</h5>
-                                    <p>Nous répondons au manque d'opportunités et d'accès à la tech dans les communautés.
+                                    <p>Nous répondons au manque d'opportunités et d'accès à la tech dans les
+                                        communautés.
                                     </p>
                                 </div>
                             </div>
-    
+
                             <div class="col-12 col-sm-6">
                                 <div class="card h-100 border-0 shadow p-3 text-center">
                                     <i class="bi bi-rocket fs-1 text-danger"></i>
@@ -59,7 +62,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Stats Row -->
                         <div
                             class="stats-box text-white shadow-sm rounded d-flex justify-content-between text-center p-3 mt-4">
@@ -80,88 +83,89 @@
                                 <p>Users</p>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
 
-    <section id="services" >
-        <h2>Evènements</h2>
+    <section id="services">
+        <h2>Evénements</h2>
+        <div class="a-propos">
+            <p>Nous sommes bien plus qu'une communauté.</p>
+            <p>Nous sommes une nouvelle façon de penser, d'éduquer et d'innover.</p>
+        </div>
+        <div class="upcoming rounded text-center p-5 mb-4 bg-primary w-100">
+            <i class="bi bi-calendar-event"></i>
+            <h2>Restez connectés</h2>
+            <p>Les prochains événements seront postés ici.</p>
+        </div>
         <div class="container">
-            <p class="text-center mb-4">Curieux de savoir ce nous vous offrons ce moi de mai? </p>
-            <table class="table table-bordered table-hover text-center">
-                <thead class="table-dark">
-                    <tr>
-                        <th>#</th>
-                        <th>Nom de l'Événement</th>
-                        <th>Date</th>
-                        <th>Détails</th>
-                        <th>Inscriptions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr data-bs-toggle="modal" data-bs-target="#eventModal"
-                        onclick="showEventDetails('Atelier IA', '10 Mars 2025', 'Un atelier sur l\'intelligence artificielle et ses applications.')">
-                        <td>1</td>
-                        <td>Atelier IA</td>
-                        <td>10 Mars 2025</td>
-                        <td><button class="btn btn-primary btn-sm">Voir Détails</button></td>
-                        <td><button class="btn btn-success btn-sm">S'inscrire</button></td>
-                    </tr>
-                    <tr data-bs-toggle="modal" data-bs-target="#eventModal"
-                        onclick="showEventDetails('Conférence Cloud', '15 Avril 2025', 'Discussion sur les technologies cloud modernes.')">
-                        <td>2</td>
-                        <td>Conférence Cloud</td>
-                        <td>15 Avril 2025</td>
-                        <td><button class="btn btn-primary btn-sm">Voir Détails</button></td>
-                        <td><button class="btn btn-success btn-sm">S'inscrire</button></td>
-                    </tr>
-                    <tr data-bs-toggle="modal" data-bs-target="#eventModal"
-                        onclick="showEventDetails('Hackathon Dev', '22 Mai 2025', 'Un hackathon de 48 heures pour développer des solutions innovantes.')">
-                        <td>3</td>
-                        <td>Hackathon Dev</td>
-                        <td>22 Mai 2025</td>
-                        <td><button class="btn btn-primary btn-sm">Voir Détails</button></td>
-                        <td><button class="btn btn-success btn-sm">S'inscrire</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="g-3 align-items-stretch">
+                <div class="">
 
-        <!-- MODAL -->
-        <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="eventTitle">Détails de l'Événement</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row gap-3 box-shadow">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Hacktoberfest Libreville 2025</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Présentiel</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.</p>
+                                <a href="#" class="card-link">Voir plus</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the bulk of the card’s content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <p><strong>Date :</strong> <span id="eventDate"></span></p>
-                        <p id="eventDescription"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    </div>
+
+                    <!-- Stats Row -->
+                    <!-- <div
+                            class="stats-box text-white shadow-sm rounded d-flex justify-content-center text-center p-3 mt-4">
+                            <button class="btn btn-primary">En savoir plus</button>
+                        </div> -->
+
                 </div>
             </div>
-        </div>
 
-        <script>
-            function showEventDetails(title, date, description) {
-                document.getElementById("eventTitle").innerText = title;
-                document.getElementById("eventDate").innerText = date;
-                document.getElementById("eventDescription").innerText = description;
-            }
-        </script>
+        </div>
+        <button class="btn btn-primary text-center w-100">En savoir plus</button>
     </section>
 
-   
 
-    <section id="opportunites" >
+
+    <section id="opportunites">
         <h2>Opportunités</h2>
         <p>Nos partenaires sont des personnes physiques et morales qui soutiennent notre vision. <a href="http://"
                 target="_blank" rel="noopener noreferrer">Cliquez ici pour en devenir un.</a></p>
@@ -170,16 +174,16 @@
         <h2>Blog et news</h2>
     </section>
     <section id="resources">
-        Resources
+        <h2>Resources</h2>
     </section>
     <section id="galerie">
-        Galerie
+        <h2>Galerie</h2>
     </section>
     <section id="reglement-interieur">
         <h2>Règlement intérieur</h2>
     </section>
 
-     <section id="contact" >
+    <section id="contact">
         <h2>Partenaires</h2>
         <p>Nos partenaires sont des personnes physiques et morales qui soutiennent notre vision. <a href="http://"
                 target="_blank" rel="noopener noreferrer">Cliquez ici pour en devenir un.</a></p>

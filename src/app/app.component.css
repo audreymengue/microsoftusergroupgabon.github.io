@@ -66,6 +66,13 @@ section .picture{
   padding-top: 3rem;
 }
 
+#services {
+  min-height: auto !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  padding-top: 3rem;
+}
+
 /* Reduce space between text and cards */
 #about .a-propos {
   margin-bottom: 3rem;
@@ -78,3 +85,4 @@ section .picture{
 .stats-box{
   background-color: #00A4EF;
 }
+
