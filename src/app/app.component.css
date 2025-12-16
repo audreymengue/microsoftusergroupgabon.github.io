@@ -1,16 +1,14 @@
 
   
-.logoaninf{
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+.logos{
+  width: 500px;
+  height: 500px;
 }
 /* Ensure each section fills the full viewport */
 section {
-  min-height: 100vh; /* 100% of viewport height */
+  height: 100vh; /* 100% of viewport height */
   display: flex;      /* Flex for vertical centering */
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
   align-items: center;     /* Center content horizontally */
   padding: 2rem;           /* Optional padding */
   box-sizing: border-box;
@@ -48,17 +46,35 @@ section .picture{
   object-fit: contain;
 }
 
-/* section #about{
-  display: flex;
-  align-items: stretch;
+#contacte .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#about > div{
-  flex: 1;
-  padding: 20px;
-  margin: 20px;
-} */
- /* Fix the huge spacing on ABOUT section */
+#contacte .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+#contacte .form-control:focus {
+  border-color: #0078D4;
+  box-shadow: none;
+}
+
+#opportunites .border {
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+#opportunites .border:hover {
+  border-color: #0078D4;
+  transform: translateY(-4px);
+}
+
+
+#contacte .form-control,
+#contacte .btn {
+  border-radius: 0.5rem;
+}
+
 #about {
   min-height: auto !important;
   justify-content: flex-start !important;
@@ -86,3 +102,15 @@ section .picture{
   background-color: #00A4EF;
 }
 
+.partner-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#f\&q {
+  height: auto !important;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
