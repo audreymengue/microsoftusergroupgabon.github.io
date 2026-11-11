@@ -1,62 +1,127 @@
-<footer class="bg-dark text-light py-4">
+<footer class="footer bg-dark text-white pt-5 pb-4">
     <div class="container">
-      <div class="row">
-        <!-- Logo Section (Back to Top) -->
-        <div class="col-md-3 text-center">
-          <a href="#home">
-            <img src="assets/logobgwhite.jpeg" alt="Logo" class="logo-footer" />
-          </a>
-          <p class="mt-2">&copy; 2025 MUGGA. All rights reserved.</p>
+        <!-- Main Footer Content -->
+        <div class="row g-4">
+            <!-- Logo & Description Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand mb-3">
+                    <a href="#home" class="d-inline-block">
+                        <img src="assets/logobgwhite.jpeg" alt="Microsoft User Group Gabon" class="footer-logo mb-3" style="height: 50px;">
+                    </a>
+                    <p class="text-white-50 small mb-3">
+                        Microsoft User Group Gabon est une communauté dynamique dédiée à l'innovation, 
+                        l'apprentissage et le partage de connaissances autour des technologies Microsoft.
+                    </p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="footer-title text-white mb-3">Navigation</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#home" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Accueil</a></li>
+                    <li><a href="#about" class="text-white-50 text-decoration-none d-block mb-2 hover-link">À propos</a></li>
+                    <li><a href="#services" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Événements</a></li>
+                    <li><a href="#reglement-interieur" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Règlement</a></li>
+                    <li><a href="#partenaires" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Partenaires</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="footer-title text-white mb-3">Ressources</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="https://learn.microsoft.com/fr-fr" target="_blank" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Microsoft Learn</a></li>
+                    <li><a href="#opportunites" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Opportunités</a></li>
+                    <li><a href="#faq" class="text-white-50 text-decoration-none d-block mb-2 hover-link">FAQ</a></li>
+                    <li><a href="#contact" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Contact</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none d-block mb-2 hover-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Newsletter Section -->
+            <div class="col-lg-4 col-md-6">
+                <h5 class="footer-title text-white mb-3">Restez connectés</h5>
+                <div class="contact-info mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <span class="text-white-50">Libreville, Gabon</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <a href="mailto:contact@muggabon.org" class="text-white-50 text-decoration-none hover-link">contact&#64;muggabon.org</a>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-phone-alt text-primary me-3"></i>
+                        <span class="text-white-50">+241 765 83919</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="newsletter">
+                    <p class="text-white-50 small mb-2">Abonnez-vous à notre newsletter</p>
+                    <div class="d-flex gap-2">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" 
+                               placeholder="Votre email" style="border-radius: 50px;">
+                        <button type="submit" class="btn btn-primary px-3" style="border-radius: 50px;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <!-- Resources Section -->
-        <div class="col-md-3">
-          <h5>Lien utiles</h5>
-          <ul class="list-unstyled">
-            <li><a href="https://learn.microsoft.com/fr-fr" class="text-light">Micrsoft Learn</a></li>
-            <li><a href="#about" class="text-light">About</a></li>
-            <li><a href="#services" class="text-light">Services</a></li>
-            <li><a href="#contact" class="text-light">Contact</a></li>
-          </ul>
+
+        <!-- Divider -->
+        <hr class="my-4 bg-secondary">
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-white-50 small mb-0">
+                    &copy; 2025 Microsoft User Group Gabon. Tous droits réservés.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white-50 text-decoration-none small hover-link">Mentions légales</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <span class="text-white-50">|</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white-50 text-decoration-none small hover-link">Politique de confidentialité</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <span class="text-white-50">|</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white-50 text-decoration-none small hover-link">Cookies</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-  
-        <!-- Social Media Section -->
-        <div class="col-md-3">
-          <h5>Follow Us</h5>
-          <ul class="list-unstyled d-flex">
-            <li>
-              <a href="https://facebook.com" target="_blank" class="text-light me-3">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com" target="_blank" class="text-light me-3">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com" target="_blank" class="text-light me-3">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" target="_blank" class="text-light">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-  
-        <!-- Contact Information Section -->
-        <div class="col-md-3">
-          <h5>Contact Us</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-phone-alt"></i> +241 765 83919</li>
-            <li><i class="fas fa-envelope"></i> contactmyapp.com</li>
-            <li><i class="fas fa-map-marker-alt"></i> En ligne, Libreville, Gabon</li>
-          </ul>
-        </div>
-      </div>
+
+        <!-- Back to Top Button -->
+        <a href="#home" class="back-to-top" aria-label="Retour en haut">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
-  </footer>
-  
+</footer>

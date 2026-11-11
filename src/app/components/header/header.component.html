@@ -1,61 +1,119 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm py-2">
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="/assets/logobgwhite.jpeg" alt="Logo" class="logo img-fluid">
+      <img src="/assets/logobgwhite.jpeg" alt="Microsoft User Group Gabon" class="logo img-fluid" style="max-height: 50px;">
     </a>
 
     <!-- Navbar Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Navbar Links -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link text-primary" href="#home">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#about">A propos</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#services">Evènements</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#reglement-interieur">Règlement</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#partenaires">Partenaires</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#opportunites">Opportunités</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#contacte">Contacte</a></li>
-        <li class="nav-item"><a class="nav-link text-primary" href="#faq">F&Q</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Événements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reglement-interieur">Règlement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#partenaires">Partenaires</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#opportunites">Opportunités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
       </ul>
-    </div>
 
-    <!-- CTA buttons (hidden on small screens) -->
-    <div class="d-none d-lg-flex">
-      <button class="btn btn-primary me-2">Faire un don</button>
-    </div>
-  </div>
-  <hr class="m-0">
-</nav>
-
-<!-- Push content below navbar -->
-<div style="padding-top: 100px"></div>
-
-<!-- HOME SECTION -->
-<section id="home">
-  <div class="overlay d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-start">
-
-    <div class="mb-4 mb-md-0 me-md-5">
-      <h2>Apprenons.</h2>
-      <h2>Comprenons.</h2>
-      <h2>Ensemble.</h2>
-      <p>Bienvenue sur le site officiel de Microsoft User Group Gabon</p>
-      <p>Rejoignez-nous aujourd'hui et devenez membre d'une communauté vibrante.</p>
-
-      <div class="mt-2">
-        <button class="btn btn-primary">Participez à un événement</button>
-        <button class="btn btn-success mx-md-3 mt-2 mt-md-0">Devenez volontaire</button>
+      <!-- CTA Buttons -->
+      <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
+        <button class="btn btn-outline-primary">
+          <i class="bi bi-heart me-1"></i>Faire un don
+        </button>
+        <button class="btn btn-success">
+          <i class="bi bi-person-plus me-1"></i>Devenir volontaire
+        </button>
       </div>
     </div>
+  </div>
+</nav>
 
-    <div>
-      <img src="assets/undraw_co-working.svg" class="img-fluid home-img" alt="undraw illustration">
+<!-- Spacer for fixed navbar -->
+<div class="navbar-spacer"></div>
+
+<!-- HOME SECTION -->
+<section id="home" class="min-vh-100 d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <!-- Left Content -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <div class="mb-4">
+          <h1 class="display-4 fw-bold mb-3">
+            <span class="text-gradient">Apprenons.</span><br>
+            <span class="text-gradient">Comprenons.</span><br>
+            <span class="text-gradient-primary">Ensemble.</span>
+          </h1>
+          <p class="lead text-muted mb-3">
+            Bienvenue sur le site officiel de Microsoft User Group Gabon
+          </p>
+          <p class="text-muted mb-4">
+            Rejoignez-nous aujourd'hui et devenez membre d'une communauté vibrante dédiée à l'innovation et au partage de connaissances dans le Gabon.
+          </p>
+          
+          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+            <button class="btn btn-primary btn-lg px-4">
+              <i class="bi bi-calendar-event me-2"></i>Participer à un événement
+            </button>
+            <button class="btn btn-outline-success btn-lg px-4">
+              <i class="bi bi-people me-2"></i>Devenir volontaire
+            </button>
+          </div>
+
+          <!-- Social Proof -->
+          <div class="mt-5 pt-3">
+            <div class="d-flex gap-4 justify-content-center justify-content-lg-start">
+              <div class="text-center">
+                <h3 class="fw-bold mb-0 text-primary">500+</h3>
+                <p class="text-muted small mb-0">Membres</p>
+              </div>
+              <div class="text-center">
+                <h3 class="fw-bold mb-0 text-primary">20+</h3>
+                <p class="text-muted small mb-0">Événements</p>
+              </div>
+              <div class="text-center">
+                <h3 class="fw-bold mb-0 text-primary">10+</h3>
+                <p class="text-muted small mb-0">Partenaires</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <div class="bg-gradient-primary rounded-circle position-absolute top-50 start-50 translate-middle" 
+               style="width: 400px; height: 400px; opacity: 0.1; z-index: 0;"></div>
+          <img src="assets/undraw_co-working.svg" class="img-fluid position-relative" 
+               alt="Collaboration illustration" style="z-index: 1;">
+        </div>
+      </div>
     </div>
-
   </div>
 </section>

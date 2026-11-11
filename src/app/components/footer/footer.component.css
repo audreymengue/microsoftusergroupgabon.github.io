@@ -1,46 +1,199 @@
-/* Footer styling */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    width: 100%;
-  }
-  
-  footer .logo-footer {
-    height: 60px;
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  footer h5 {
+/* Footer Styles - Version avec contraste amélioré */
+.footer {
+    position: relative;
+    background: #0a0a0f; /* Fond plus sombre pour meilleur contraste */
+    border-top: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.footer-title {
+    position: relative;
+    display: inline-block;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  footer ul {
-    padding-left: 0;
-  }
-  
-  footer ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  footer .fab, footer .fas {
-    font-size: 1.5rem;
-  }
-  
-  /* Social Media Links Styling */
-  footer .d-flex {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  /* footer .me-3 {
-    margin-right: 1rem;
-  } */
-  
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ffffff !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* Liens avec contraste amélioré */
+.hover-link {
+    color: #cbd5e0 !important; /* Gris clair pour meilleure lisibilité */
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block !important;
+}
+
+.hover-link:hover {
+    color: #667eea !important;
+    transform: translateX(5px);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transform: translateY(-3px);
+    color: #ffffff;
+}
+
+.social-link i {
+    font-size: 1rem;
+}
+
+/* Contact Info */
+.contact-info i {
+    width: 20px;
+    font-size: 1rem;
+    color: #667eea;
+}
+
+.contact-info span,
+.contact-info a {
+    color: #cbd5e0 !important;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #667eea !important;
+}
+
+/* Newsletter Form */
+.newsletter .form-control {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff !important;
+}
+
+.newsletter .form-control:focus {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    color: #ffffff !important;
+}
+
+.newsletter .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter .form-control:focus::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Divider */
+.footer hr {
+    opacity: 0.3;
+    background: linear-gradient(90deg, transparent, #667eea, transparent);
+    height: 1px;
+    border: none;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-info .d-flex {
+        justify-content: center;
+    }
+    
+    .contact-info .d-flex.align-items-center {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .newsletter form,
+    .newsletter .d-flex {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Ajustements pour mobile */
+    .footer-links {
+        text-align: center;
+    }
+    
+    .hover-link {
+        display: block !important;
+        text-align: center;
+    }
+}

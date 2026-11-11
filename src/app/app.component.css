@@ -1,116 +1,38 @@
+/* Ajoutez ceci à votre fichier CSS global */
 
-  
-.logos{
-  width: 500px;
-  height: 500px;
-}
-/* Ensure each section fills the full viewport */
-section {
-  height: 100vh; /* 100% of viewport height */
-  display: flex;      /* Flex for vertical centering */
-  flex-direction: column;
-  align-items: center;     /* Center content horizontally */
-  padding: 2rem;           /* Optional padding */
-  box-sizing: border-box;
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Optional: style for your overlay on hero section */
-#home .overlay {
-  text-align: center;
-}
-section[id] {
-  scroll-margin-top: 8rem; /* navbar height */
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
 
-
-/* Remove extra margins from headings for consistent vertical centering */
-section h2, section p {
-  margin: 0.5rem 0;
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* Make buttons nicely spaced */
-section .btn {
-  margin: 0.5rem;
+.transition {
+    transition: all 0.3s ease;
 }
 
-/* Ensure your container inside sections doesn't shrink them */
-section .container {
-  width: 100%;
-  max-width: 1200px;
+.object-fit-cover {
+    object-fit: cover;
 }
 
-section .picture{
-   width: 200px;
-  height: 200px;
-  margin-right: 20px;
-  object-fit: contain;
+/* Animations au scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-#contacte .card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#contacte .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
-}
-
-#contacte .form-control:focus {
-  border-color: #0078D4;
-  box-shadow: none;
-}
-
-#opportunites .border {
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-#opportunites .border:hover {
-  border-color: #0078D4;
-  transform: translateY(-4px);
-}
-
-
-#contacte .form-control,
-#contacte .btn {
-  border-radius: 0.5rem;
-}
-
-#about {
-  min-height: auto !important;
-  justify-content: flex-start !important;
-  align-items: center;
-  padding-top: 3rem;
-}
-
-#services {
-  min-height: auto !important;
-  justify-content: flex-start !important;
-  align-items: center;
-  padding-top: 3rem;
-}
-
-/* Reduce space between text and cards */
-#about .a-propos {
-  margin-bottom: 3rem;
-}
-
-#about .container {
-  margin-top: 1rem;
-}
-
-.stats-box{
-  background-color: #00A4EF;
-}
-
-.partner-logo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-}
-
-#f\&q {
-  height: auto !important;
-  align-items: center;
-  text-align: center;
-  padding-top: 1rem;
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
 }
